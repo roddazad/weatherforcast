@@ -1,0 +1,52 @@
+body{
+    margin: 10px;
+}
+section{
+    display:flex;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border: 3px solid white;
+    
+}
+
+h1{
+    color: white;
+    padding: 5px;
+}
+.side-box{
+    display: block;
+}
+#search-box{
+    width:12vw;
+    border-bottom: 5px solid gray;
+    margin-top: 5px;
+}
+.info-box{
+    border: 3px solid gray;
+    width:75vw;
+    height: 30vh;
+    margin-left: 25px;
+    padding: 20px;
+}
+.forcast{
+    margin-left:25px;
+}
+.day-box{
+    border: 3px solid gray;
+    width:15vw;
+    margin-left:5px;
+    padding:1px;
+    background-color: blue;
+    color: bisque;
+}
+.five-day-box{
+    display: flex;
+
+
+}
