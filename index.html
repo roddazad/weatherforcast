@@ -11,64 +11,81 @@
   <body>
     <div class="header"><h1>Weather Dashboard</h1></div>
     <section>
-        <div class="side-box">
-            <h2>Search for a City</h2>
-            <input id="userInput" type="text" placeholder="Type the city name">
-            <div id="search-box"><button id="search-btn">Search</button></div>
-            <div class="city-list">
-                <ul></ul>
+      <div class="side-box">
+        <form id="city-input-form">
+          <div>
+            <label for="search-city" class="form-label"
+              >Search for a City</label
+            >
+            <div>
+              <input
+              name="cityNameInput"
+                id="userInput"
+                type="text"
+                placeholder="Type the city name"
+              />
+              <div id="search-box"><button id="search-btn">Search</button></div>
             </div>
+          </div>
+        </form>
+        <ul id="city-list"></ul>
+      </div>
+
+      <div class="display-box">
+        <div id="current-container" class="info-box">
+          <h2 id="userCity">City:</h2>
+          <h3 id="current-date">Date</h3>
+          <img id="weather-icon">
+          <p id="display-temp">Temp:</p>
+          <p id="display-wind">Wind:</p>
+          <p id="display-humidity">Humidity:</p>
         </div>
-        
-        <div class="display-box">
-            <div class="info-box">
-                <h2 id="userCity">City: </h2>
-                <h3>Temp: </h3>
-                <h3>Wind: </h3>
-                <h3>Humidity: </h3>
+        <div class="forcast">
+          <div><h2>Five-Day Forcast</h2></div>
+          <div class="five-day-box">
+            <div class="day-box" id="day1">
+              <h6 id="forcast-date1">Date:</h6>
+              <img id="forcast-icon1"/>
+              <p id="temp1">Temp:</p>
+              <p id="wind1">Wind:</p>
+              <p id="hum1">Humidity:</p>
             </div>
-            <div class="forcast">
-                <div><h2>Five-Day Forcast</h2></div>
-                <div class="five-day-box">
-                    <div class= "day-box" id="day1">
-                        <p>Date:</p>
-                        <img src="" alt="">
-                        <p> Temp: </p>
-                        <p>Wind:</p>
-                        <p>Humidity: </p>
-                    </div>
-                    <div class= "day-box" id="day2">
-                        <p>Date:</p>
-                        <img src="" alt="">
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
-                    </div>
-                    <div class= "day-box" id="day3">
-                        <p>Date:</p>
-                        <img src="" alt="">
-                        <p>Temp: </p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
-                    </div>
-                    <div class= "day-box" id="day4">
-                        <p>Date:</p>
-                        <img src="" alt="">
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
-                    </div>
-                    <div class= "day-box" id="day5">
-                        <p>Date:</p>
-                        <img src="" alt="">
-                        <p>Temp:</p>
-                        <p>Wind:</p>
-                        <p>Humidity:</p>
-                    </div>
-                </div>
+            <div class="day-box" id="day2">
+              <h6 id="forcast-date2">Date:</h6>
+              <img id="forcast-icon2" />
+              <p id="temp2">Temp:</p>
+              <p id="wind2">Wind:</p>
+              <p id="hum2">Humidity:</p>
             </div>
+            <div class="day-box" id="day3">
+              <h6 id="forcast-date3">Date:</h6>
+              <img id="forcast-icon3" />
+              <p id="temp3">Temp:</p>
+              <p id="wind3">Wind:</p>
+              <p id="hum3">Humidity:</p>
+            </div>
+            <div class="day-box" id="day4">
+              <h6 id="forcast-date4">Date:</h6>
+              <img id="forcast-icon4" />
+              <p id="temp4">Temp:</p>
+              <p id="wind4">Wind:</p>
+              <p id="hum4">Humidity:</p>
+            </div>
+            <div class="day-box" id="day5">
+                <h6 id="forcast-date5">Date:</h6>
+              <img id="forcast-icon5" />
+              <p id="temp5">Temp:</p>
+              <p id="wind5">Wind:</p>
+              <p id="hum5">Humidity:</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="./js/script.js"></script>
+    
+
   </body>
 </html>
